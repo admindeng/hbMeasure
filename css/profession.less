@@ -1,0 +1,194 @@
+.header-swiper{
+	background-image: url("../img/fuwuhy_02.png");
+}
+.service-box:hover,.service-boxmax:hover{
+	cursor: pointer;
+}
+.service-box:hover .ser-img .mask,
+.service-boxmax:hover .sermax-img .mask{
+	background-color: rgba(0,0,0,0.2);
+	z-index: 99;
+}
+.service-box:hover .ser-img .ser-imgh,
+.service-boxmax:hover .sermax-img .sermax-imgh{
+	transform: scale(1.3);
+}
+.service-box:hover .ser-img .ser-icon,
+.service-boxmax:hover .sermax-img .ser-icon
+{
+	z-index: 99;
+	opacity: 1;
+	transform: translate(-50%,-50%);
+}
+.services-box{
+	margin-top: 150px;
+	width: 1260px;
+}
+// 我们的服务
+.service-hs{
+	margin: 0px 15px 52px 15px;
+	.services{
+		font-size: 40.23px;
+		font-weight: bold;
+		font-family: '思源宋体Bold';
+		line-height: 1;
+		.services-spans{
+			color: #e5e5e5;
+		}
+	}
+}
+.service-box{
+	width: 285px;
+	height: 570px;
+	line-height: 1;
+	margin: 28px 15px;
+	background-color: #f7f7f7;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	overflow: hidden;
+	.ser-img{
+		height: 285px;
+		position: relative;
+		overflow: hidden;
+		.ser-imgh{
+			transition: all 0.3s;
+		}
+		.mask{
+			position: absolute;
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			transition: all 0.3s;
+		}
+		.ser-icon{
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			width: 80px;
+			height: 90px;
+			opacity: 0;
+			transform: translate(-50%,200%);
+			transition: all 0.3s;
+		}
+	}
+	.ser-boxs{
+		padding: 19px 24px;
+		.ser-title{
+			font-family: '思源黑体Bold';
+			font-size: 18px;
+			margin-bottom: 18px;
+		}
+		.ser-ul{
+			height: 125px;
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+			.ser-uli{
+				color: #575959;
+				font-family: '思源黑体Regular';
+				font-size: 14px;
+				margin-bottom: 11px;
+			}
+		}
+		.ser-xq{
+			color: #575959;
+			font-family: '思源黑体Regular';
+			font-size: 14px;
+			margin-top: 35px;
+			line-height: 1.5;
+		}
+	}
+}
+.service-boxmax{
+	width: 600px;
+	height: 570px;
+	line-height: 1;
+	margin: 28px 15px;
+	background-color: #f7f7f7;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	overflow: hidden;
+	.sermax-img{
+		height: 286px;
+		position: relative;
+		overflow: hidden;
+		.sermax-imgh{
+			transition: all 0.3s;
+		}
+		.mask{
+			position: absolute;
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			transition: all 0.3s;
+		}
+		.ser-icon{
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			width: 80px;
+			height: 90px;
+			opacity: 0;
+			transform: translate(-50%,200%);
+			transition: all 0.3s;
+		}
+	}
+	.ser-boxs{
+		padding: 19px 24px;
+		.ser-title{
+			font-family: '思源黑体Bold';
+			font-size: 18px;
+			margin-bottom: 18px;
+		}
+		.ser-ul{
+			height: 125px;
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+			.ser-uli{
+				color: #575959;
+				font-family: '思源黑体Regular';
+				font-size: 14px;
+				margin-bottom: 11px;
+			}
+		}
+		.ser-xq{
+			color: #575959;
+			font-family: '思源黑体Regular';
+			font-size: 14px;
+			margin-top: 35px;
+			line-height: 1.5;
+		}
+	}
+}
+
+/* 大屏设备 */
+@media (max-width: 1275px) {
+   	.services-box{
+   		width: inherit;
+   	}
+}
+
+/* 中等屏幕 */
+@media (min-width: 768px) and (max-width: 1023px) {
+   .services-box{
+   	width: inherit;
+   }
+}
+
+/* 小屏设备 */
+@media (max-width: 767px) {
+    .service-boxmax{
+		width: 90%;
+	}
+	.service-box{
+		width: 90%;
+	}
+	.services-box{
+		width: inherit;
+	}
+}

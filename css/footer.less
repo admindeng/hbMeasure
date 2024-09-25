@@ -1,0 +1,69 @@
+// footer底部
+.footer{
+	background-image: url('../img/azoau-yovib.jpg');
+	background-size: cover;
+	width: 100%;
+	.footer-bg{
+		background-color: rgba(1,117,185,0.5);
+		width: 100%;
+		margin: 0 auto;
+		.footer-flex{
+			display: flex;
+			.footer-img{
+				flex: 1;
+				.footer-imgs{
+					width: 85px;
+				}
+			}
+		}
+	}
+	.footer-content{
+		height: 200px;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		.footer-span{
+			color: #a4c2de;
+		}
+	}
+	.footer-tile{
+		font-size: 16px;
+	}
+	
+}
+/* 大屏设备 */
+@media (min-width: 1024px) {
+	.header-swiper{
+		height: 500px;
+	}
+}
+
+/* 中等屏幕 */
+@media (min-width: 768px) and (max-width: 1023px) {
+	.header-swiper{
+		height: 400px;
+	}
+   .footer{
+		.footer-bg{
+			.footer-flex{
+				.footer-img{
+					.footer-imgs{
+						width: 75px; // 二维码
+					}
+				}
+			}
+		}
+    }	
+}
+
+/* 小屏设备 */
+@media (max-width: 767px) {
+	.header-swiper{
+		height: 300px;
+	}
+	.footer{
+		.footer-content{
+			height: inherit;
+		}
+	}	
+}

@@ -1,0 +1,178 @@
+.header-swiper{
+	background-image: url("../img/banna2_02.png");
+}
+
+.service-my{
+	width: 1200px;
+	margin-top: 150px;
+	margin-bottom: 150px;
+	display: flex;
+	.smy-left-nav{
+		width: 265px;
+		.nav-mytop{
+			height: 100px;
+			background-color: #3c3c3c;
+			color: #ffffff;
+			text-align: center;
+			border-radius: 35px 35px 0 0;
+			.title-t{
+				font-family: '微软雅黑Bold';
+				font-size: 18px;
+				line-height: 1;
+				padding-top: 29px;
+				padding-bottom: 13px;
+			}
+			.title-b{
+				font-family: '微软雅黑Regular';
+				font-size: 16px;
+				line-height: 1;
+				// font-weight: bold;
+			}
+		}
+		.nav-mytop-lianxi{
+			height: 130px;
+			background-image: url('../img/azoau-yovib.jpg');
+			background-size: 100% 100%;
+			.nav-myxi-bg{
+				height: 100%;
+				background-color: rgba(1,117,185,0.5);
+				display: flex;
+				align-items: center;
+				text-align: center;
+				justify-content: center;
+				.nav-myxi-icon{
+					width: 31px;
+					height: 31px;
+					font-size: 20px;
+					line-height: 31px;
+					color: #ffffff;
+					border: 1px solid #ffffff;
+					border-radius: 50%;
+				}
+				.nav-myxi-phone{
+					display: flex;
+					flex-direction: column;
+					color: #ffffff;
+					font-family: '微软雅黑Regular';
+					font-size: 16px;
+					margin-left: 10px;
+				}
+			}
+		}
+	}
+	.smy-ul{
+		.smy-ul-liem{
+			width: 100%;
+			display: inline-block;
+			height: 80px;
+			text-align: center;
+			cursor: pointer;
+			background-color: #f5f5f5;
+			line-height: 80px;
+			font-family: '微软雅黑Regular';
+			font-size: 18px;
+			border-bottom: 1px solid #ffffff;
+			.liem-span{
+				color: #0081cc;
+				padding-right: 28px;
+			}
+		}
+		.liem-slecte{
+			background-color: #0081cc;
+			color: #ffffff;
+			.liem-span{
+				color: #ffffff;
+			}
+		}
+	}
+	.smy-right-conten{
+		width: 900px;
+		margin: 18px 15px;
+		.smy-right-cx{
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.smy-right-box:hover{
+			// box-shadow: 0 0 15px rgba(0,0,0,0.3);
+			box-shadow: 0px 0px 20px 5px #e8e8e8;
+		}
+		// .smy-right-box:hover .smy-box-img{
+		// 	transform: scale(1.2);
+		// }
+		.smy-right-box{
+			width: 285px;
+			height: 300px;
+			border-radius: 11px;
+			margin-bottom: 40px;
+			margin-left: 15px;
+			background-color: #ffffff;
+			cursor: pointer;
+			overflow: hidden;
+			border: 1px solid #e8e8e8;
+			font-family: '微软雅黑Regular';
+			.smy-box-img{
+				height: 150px;
+				// transition: all 0.3s;
+			}
+			.smy-box-xinxi{
+				padding: 13px 14px;
+				.smy-box-title{
+					font-size: 16px;
+					line-height: 1;
+					margin-bottom: 15px;
+				}
+				.smy-box-dl{
+					font-size: 14px;
+					color: #575959;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					display: -webkit-box;
+					-webkit-line-clamp: 4;
+					-webkit-box-orient: vertical;
+					white-space: normal;
+				}
+			}
+		}
+	}
+}
+
+/* 大屏设备 */
+@media (min-width: 1024px) {
+   	
+}
+
+/* 中等屏幕 */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .service-my{
+  	width: inherit;
+	flex-direction: column;
+	.smy-left-nav{
+		width: inherit;
+	}
+	.smy-right-conten{
+		width: inherit;
+		.smy-right-cx{
+			justify-content: center;
+		}
+	}
+  }
+}
+
+/* 小屏设备 */
+@media (max-width: 767px) {
+    .service-my{
+    	width: inherit;
+		flex-direction: column;
+		.smy-left-nav{
+			width: inherit;
+		}
+		.smy-right-conten{
+			width: inherit;
+			.smy-right-cx{
+				justify-content: center;
+			}
+		}
+    }
+}
+
+

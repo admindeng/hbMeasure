@@ -1,0 +1,169 @@
+/* 导航栏 */
+.header-swiper{
+	position: relative;
+}
+
+header {
+    width: 100%;
+	position: absolute;
+	background: rgba(0,0,0,0.4);
+	z-index: 99; 
+}
+header:after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+.brand {
+    float: left;
+    /* height: 100px; */
+}
+.brand p {
+    margin: 0;
+}
+.rm-nav {
+    letter-spacing: 1px;
+}
+.logo {
+    width: 125px;
+    height: 100px;
+    float: left;
+    padding: 0;
+	display: flex;
+	align-items: center;
+}
+
+.rm-toggle.rm-button {
+    margin-top: 25px;
+}
+
+.rm-css-animate.rm-menu-expanded {
+    max-height: none;
+    display: block;
+}
+.rm-container.rm-layout-expanded {
+    float: right;
+}
+.rm-menu, .rm-nav ul{
+	background: none;
+	box-sizing: border-box;
+}
+.rm-nav > ul > li > ul > li:hover{
+	background-color: #0081cc;
+}
+.rm-nav > ul > li > ul > li{
+	background: rgba(0,0,0,0.4);
+}
+.rm-nav > ul > li > ul > li > ul > li{
+	background: rgba(0,0,0,0.4);
+}
+.rm-nav > ul > li > ul > li > ul > li:hover{
+	background-color: #0081cc;
+}
+.rm-layout-expanded .rm-nav > ul > li > a:hover{
+	border-bottom: 2px solid #fff;
+}
+.rm-layout-expanded .rm-nav .nav-select{
+	border-bottom: 2px solid #fff;
+}
+.rm-nav li a,
+.rm-top-menu a {
+    padding: .75rem 1rem;
+    font-size: .9em;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+}
+.rm-layout-expanded .rm-nav > ul > li > a,
+.rm-layout-expanded .rm-top-menu > .rm-menu-item > a {
+    height: 100px;
+    line-height: 100px;
+}
+
+/* 搜索 */
+.nav-item-seach{
+	height: 100px;
+	line-height: 100px;
+	position: relative;
+	margin: 0rem 1rem;
+}
+.item-seach-input{
+	background: rgba(0, 0, 0, 0.1);
+	border: 1px solid #fff;
+	border-radius: 20px;
+	line-height: 25px;
+	padding-left: 10px;
+	color: #fff;
+	width: 100%;
+}
+.nav-icon{
+	position: absolute;
+	right: 8px;
+	top: 50%;
+	transform: translateY(-50%);
+	color: #fff;
+	font-size: 19px;
+}
+
+/* 大屏设备 */
+@media (max-width: 1275px) {
+   	
+}
+
+/* 中等屏幕 */
+@media (min-width: 768px) and (max-width: 1023px) {
+	.rm-toggle.rm-button {
+	    margin-top: 23px;
+	}
+	.logo {
+	    height: 70px;
+	}
+   .rm-layout-expanded .rm-top-menu > .rm-menu-item > a {
+       height: 70px;
+       line-height: 70px;
+   }
+}
+
+/* 小屏设备 */
+@media (max-width: 767px) {
+	.rm-toggle.rm-button {
+	    margin-top: 13px;
+	}
+	.logo {
+	    height: 55px;
+	}
+    .rm-layout-expanded .rm-top-menu > .rm-menu-item > a {
+        height: 55px;
+        line-height: 55px;
+    }
+}
+
+/* 字体 */
+@font-face {
+	font-family: '思源宋体Bold';
+	src: url('../fonts/SourceHanSerifCN-Bold.otf');
+}
+@font-face {
+	font-family: '思源黑体Regular';
+	src: url('../fonts/siyuanheitiRegular.otf');
+}
+@font-face {
+	font-family: '思源黑体Bold';
+	src: url('../fonts/siyuanheitiBold.otf');
+}
+@font-face {
+	font-family: '思源黑体Light';
+	src: url('../fonts/SourceHanSansCN-Light.otf');
+}
+@font-face {
+	font-family: '微软雅黑Bold';
+	src: url('../fonts/msyhbd.ttc');
+}
+@font-face {
+	font-family: '微软雅黑Regular';
+	src: url('../fonts/msyhl.ttc');
+}
+
+@font-face {
+	font-family: '微软雅黑Light';
+	src: url('../fonts/SourceHanSansCN-ExtraLight.otf');
+}
